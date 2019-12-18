@@ -32,7 +32,7 @@ class DogsController extends Controller
 
        $this->storeImage($dog);
 
-    return redirect('/honden');
+    return redirect('/home');
 
     }
 
@@ -60,7 +60,7 @@ class DogsController extends Controller
     {
         $dog->delete();
 
-        return redirect('/honden');
+        return redirect('/home');
     }
 
     private function validateRequest()
