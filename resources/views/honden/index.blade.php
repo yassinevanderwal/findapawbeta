@@ -5,7 +5,7 @@
 
 <a href="honden/create">Nieuwe hond toevoegen</a>
 
-@forelse($dogs as $dog)
+@forelse($dogs ?? '' as $dog)
     
             @if($dog->image)
                 <div class="row">
@@ -25,7 +25,7 @@
 
     <div class="row">
         <div class="col-12 d-flex justify-content-center pt-4">
-            {{ $dogs->links() }}
+            {{ $dogs ?? ''->links() }}
         </div>
     </div>
 
