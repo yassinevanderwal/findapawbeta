@@ -8,9 +8,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::view('/welkom', 'welkom');
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'DogsController@index');
 
-Route::get('/honden', 'DogsController@index');
+Route::get('/home', 'DogsController@index');
 Route::get('/honden', 'DogsController@create');
 Route::post('/honden', 'DogsController@store');
 Route::get('/honden/{dog}', 'DogsController@show');

@@ -25,6 +25,7 @@
     <div class="container w-screen mt-4 dashboard_bg">
     </div>
     
+    @include('honden.index')
 
     @if (Auth::user()->is_admin == 1)
     <!-- Adding dogs button-->
@@ -60,5 +61,5 @@
 
 @endsection
 
-@include('layouts.footer')
+
 
