@@ -24,9 +24,12 @@
     <!-- Background image-->
     <div class="container w-screen mt-4 dashboard_bg">
     </div>
+<<<<<<< HEAD
     
     @include('honden.index')
 
+=======
+>>>>>>> aebd1510057b44ba6e79f1d5c5876a7790e61cc4
     @if (Auth::user()->is_admin == 1)
     <!-- Adding dogs button-->
     <div class="container">
@@ -58,8 +61,13 @@
   </div>
   @endif
 </div>
+<<<<<<< HEAD
 
 @endsection
 
 
 
+=======
+@include('layouts.footer')
+@endsection
+>>>>>>> aebd1510057b44ba6e79f1d5c5876a7790e61cc4
