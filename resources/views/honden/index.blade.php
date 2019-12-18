@@ -29,11 +29,11 @@
 
 <a href="honden/create">Nieuwe hond toevoegen</a>
 
-<<<<<<< HEAD
+
             @forelse($dogs as $dog)
-=======
-@forelse($dogs ?? '' as $dog)
->>>>>>> e6b1db42168be79c19763ee03f95cfa5e30ac0e2
+
+
+
     
             @if($dog->image)
                 <div class="row">
