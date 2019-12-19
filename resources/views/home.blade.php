@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('layout')
 
 @section('content')
+<<<<<<< HEAD
   
 <div class="container">
     <div class="row">
@@ -71,3 +72,10 @@
 @include('layouts.footer')
 @endsection
 >>>>>>> aebd1510057b44ba6e79f1d5c5876a7790e61cc4
+=======
+<h1> Welkom op de website </h1>
+
+<example-component></example-component>
+
+@endsection
+>>>>>>> parent of b8e7de5... Merge branch 'master' of https://github.com/yassinevanderwal/findapawbeta
