@@ -10,7 +10,7 @@
 
     @include('honden.form')
 
-    <button class="btn btn-primary" type="submit">Opslaan</button> <a href="/honden/{{ $dog->id }}">Terug</a>
+    <a href="/honden/{{ $dog->id }}">Terug</a> <button class="btn btn-primary" type="submit">Opslaan</button> 
 
 </form>
 

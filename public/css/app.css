@@ -323,9 +323,13 @@ button {
   border-radius: 0;
   border:none !important;
   border:0px !important;
-  color:white;
+  color:#F86800;
   background-color:transparent;
   margin-left:25px;
+}
+
+button:hover {
+  color: #ff841f;
 }
 
 .fa-arrow-right {
@@ -4397,12 +4401,12 @@ input[type=button].btn-block {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  border-color: #3490dc;
-  background-color: #3490dc;
+  border-color: #F86800;
+  background-color: #F86800;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(220, 133, 52, 0.25);
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
@@ -7533,7 +7537,7 @@ a.bg-primary:hover,
 a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #2176bd !important;
+  background-color: rgb(255, 122, 28) !important;
 }
 
 .bg-secondary {
@@ -7544,7 +7548,7 @@ a.bg-secondary:hover,
 a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #545b62 !important;
+  background-color: #6c757d !important;
 }
 
 .bg-success {

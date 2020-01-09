@@ -18,9 +18,9 @@
 
                 <!--------- Age ----------> 
 
-                <div>
+                <div class="age">
                         <label for="age" class="font-weight-bold">Leeftijd</label>
-                        <select name="age"  value="{{ old('age') ?? $dog->age }}">
+                        <select name="age"  value="{{ old('age') ?? $dog->age }}" required>
                                 <option value="">--Selecteren--</option>
                                 <option value="<1">Jonger dan 1 jaar</option>
                                 <option value="1-3">1 tot 3 jaar</option>
