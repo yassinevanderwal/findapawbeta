@@ -5067,7 +5067,7 @@ input[type=button].btn-block {
     display:none !important;
   }
   .card {
-    top: 30% !important;
+    top: 100px !important;
 }
 }
 @media (min-width: 576px) {
@@ -5445,9 +5445,7 @@ input[type=button].btn-block {
         flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  transform: translate(-50%,0%);
-  top: 50%;
-  left: 50%;
+  top:200px;
 }
 
 .card > hr {
