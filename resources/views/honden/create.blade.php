@@ -11,8 +11,8 @@
     
         @include('honden.form')
 
-    <div class="row align-items-center justify-content-center m-3">
-        <button class="btn btn-primary mr-2" type="submit">Toevoegen</button> <a href="/honden">Terug</a>
+    <div class="col text-center m-3">
+        <a href="/honden">Terug</a> <button class="btn btn-primary" type="submit">Toevoegen</button> 
     </div>
 </form>
 

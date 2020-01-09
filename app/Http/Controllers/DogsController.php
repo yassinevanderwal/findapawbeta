@@ -28,7 +28,7 @@ class DogsController extends Controller
     public function store()
     {
         
-       $dog = \App\Dog::create($this->validateRequest());
+       
 
        $this->storeImage($dog);
 
@@ -67,10 +67,10 @@ class DogsController extends Controller
     {
 
         return tap(request()->validate([
-            'name' => 'required',
-            'age' => 'required',
-            'breed' => 'required',
-            'gender' => 'required',
+            'name' => 'required|max:20',
+            'age' => 'required|max:3',
+            'breed' => 'required|max:40',
+            'gender' => 'required|max:5',
             'pair' => 'required',
             'other_dogs' => 'required',
             'other_cats' => 'required',

@@ -58,8 +58,9 @@
 <strong>Kan loslopen</strong>
 <p>{{ $dog->independent }}</p>
 
-<div>
+<div class="row">
     <a href="/honden/{{ $dog->id }}/edit">Bewerken</a>
+
 
 <form action="/honden/{{ $dog->id }}"  method="post">
         @method('DELETE')
