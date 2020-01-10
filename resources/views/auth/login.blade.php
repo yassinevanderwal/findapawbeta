@@ -13,18 +13,14 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
+                        
                         <div class="form-group row">
                             <label for="email" placeholder="Yassine van der Wal" class="col-md-5 col-form-label text-md-right">{{ __('E-mailadres') }} </label>
 
                             <div class="col-md-7">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                
+                                
                             </div>
                         </div>
 
@@ -39,6 +35,12 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                            
+                                @if (Session::has('error'))
+                                    <div class="invalid-feedback" role="alert">
+                                        <strong>{{ Session::get('error') }}</strong>
+                                    </div>
+                                @endif
                             </div>
                         </div>
 
