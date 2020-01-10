@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card-welkom">
                 <div class="card-body">
                     @if (Auth::user()->is_admin == 1)
                     <div class="text-center">
