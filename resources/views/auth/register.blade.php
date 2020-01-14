@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container_left">
+<div class="row">
+<div class="col-md-6 container_left">
 </div>
-<div class="container">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-12">
+<div class="col-md-6">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-11">
             <div class="card">
-                <div class="card-header text-right"><h1>{{ __('Account aanmaken') }}</h1>
+                <div class="card-header text-right"><h1>Account <br> aanmaken</h1>
                 Al een account? <a class="btn-register" href="/login">Meld je nu aan</a>
                 </div>
                 <div class="card-body">
@@ -77,5 +79,7 @@
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 @endsection

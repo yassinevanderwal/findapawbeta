@@ -128,15 +128,17 @@ body {
   outline: 0 !important;
 }
 
-.container_left {
-  position:relative;
-  height:100vh;
-  width:50%;
-  background-repeat: no-repeat;
-  background-image: url('../img/account_bg.png');
-  background-position: top;
-  overflow:hidden;
-  float:left;
+@media (min-width: 768px) {
+  .container_left {
+    position:relative;
+    height:100vh;
+    width:50%;
+    background-repeat: no-repeat;
+    background-image: url('../img/account_bg.png');
+    background-position: top;
+    overflow:hidden;
+    float:left;
+  }
 }
 
 .dashboard_bg {
@@ -5066,7 +5068,7 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 677px) {
   .container_left {
     display:none !important;
   }
